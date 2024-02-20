@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>894</width>
+    <height>633</height>
+   </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="windowTitle">
+   <string>MiniStand</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QHBoxLayout" name="horizontalLayout">
+    <item>
+     <widget class="QLabel" name="label">
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>894</width>
+     <height>26</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menumenu">
+    <property name="title">
+     <string>menu</string>
+    </property>
+    <widget class="QMenu" name="menuadd_PT">
+     <property name="title">
+      <string>add PT</string>
+     </property>
+     <addaction name="actionCurrent_read"/>
+     <addaction name="actionVoltage_read"/>
+    </widget>
+    <addaction name="menuadd_PT"/>
+    <addaction name="actionadd_loadcell"/>
+    <addaction name="actionadd_TC"/>
+    <addaction name="actionview_Active_Sensors"/>
+   </widget>
+   <addaction name="menumenu"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="actionadd_loadcell">
+   <property name="text">
+    <string>add loadcell</string>
+   </property>
+  </action>
+  <action name="actionadd_TC">
+   <property name="text">
+    <string>add TC</string>
+   </property>
+  </action>
+  <action name="actionCurrent_read">
+   <property name="text">
+    <string>Current read</string>
+   </property>
+  </action>
+  <action name="actionVoltage_read">
+   <property name="text">
+    <string>Voltage read</string>
+   </property>
+  </action>
+  <action name="actiondelete_sensor">
+   <property name="text">
+    <string>delete sensor</string>
+   </property>
+  </action>
+  <action name="actionview_Active_Sensors">
+   <property name="text">
+    <string>view active sensors</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
