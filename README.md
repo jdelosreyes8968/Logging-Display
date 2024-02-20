@@ -1,2 +1,2 @@
 # Logging-Display
-Logging Display for rocket project (through PyQt5)
+Logging Display for Rocket Project (through PyQt5)
